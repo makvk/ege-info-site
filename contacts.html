@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | ЕГЭ Информатика</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        }
+        .contact-icon {
+            font-size: 2rem;
+            color: #667eea;
+            margin-right: 15px;
+        }
+        .footer {
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Навигация (такая же, как на главной) -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="bi bi-laptop"></i> ЕГЭ Информатика</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#about">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#courses">Курсы</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Отступ для фиксированного меню -->
+<div style="height: 80px;"></div>
+
+<!-- Страница контактов -->
+<section class="py-5">
+    <div class="container">
+        <h1 class="text-center fw-bold mb-5">Свяжитесь с нами</h1>
+        
+        <div class="row">
+            <!-- Форма обратной связи -->
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4 shadow-sm">
+                    <h3 class="mb-4">Напишите нам</h3>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" placeholder="Иван Иванов" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="ivan@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Тема</label>
+                            <select class="form-select" id="subject" required>
+                                <option value="" selected disabled>Выберите тему</option>
+                                <option>Вопрос по курсу</option>
+                                <option>Запись на пробный урок</option>
+                                <option>Сотрудничество</option>
+                                <option>Другое</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Ваш вопрос..." required></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreement" required>
+                            <label class="form-check-label" for="agreement">Соглашаюсь на обработку персональных данных</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                    </form>
+                    <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert">
+                        Спасибо! Мы свяжемся с вами в ближайшее время.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Контактная информация -->
+            <div class="col-lg-6">
+                <div class="card p-4 shadow-sm h-100">
+                    <h3 class="mb-4">Наши контакты</h3>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-geo-alt-fill contact-icon"></i>
+                        <div>
+                            <h5 class="mb-1">Адрес</h5>
+                            <p class="mb-0">г. Москва, ул. Образцова, д. 9, стр. 2</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-telephone-fill contact-icon"></i>
+                        <div>
+                            <h5 class="mb-1">Телефон</h5>
+                            <p class="mb-0">+7 (999) 123-45-67</p>
+                            <p class="mb-0 text-muted">Пн-Пт: 10:00 - 20:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-envelope-fill contact-icon"></i>
+                        <div>
+                            <h5 class="mb-1">Email</h5>
+                            <p class="mb-0">info@ege-informatika.ru</p>
+                            <p class="mb-0">support@ege-informatika.ru</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-clock-fill contact-icon"></i>
+                        <div>
+                            <h5 class="mb-1">Время работы</h5>
+                            <p class="mb-0">Ежедневно с 9:00 до 22:00 (по Москве)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h5 class="mb-3">Мы в соцсетях</h5>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-telegram"></i> Telegram</a>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-vk"></i> VK</a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-youtube"></i> YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Карта -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card p-3 shadow-sm">
+                    <h3 class="mb-3">Как нас найти</h3>
+                    <div class="ratio ratio-21x9">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef&source=constructor" 
+                                frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-muted mt-2 small">* Замените ссылку на реальную карту от Яндекс или Google</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="footer text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>ЕГЭ Информатика</h5>
+                <p>Подготовка к ЕГЭ по информатике с 2015 года</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Навигация</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white text-decoration-none">Главная</a></li>
+                    <li><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                    <li><a href="contacts.html" class="text-white text-decoration-none">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Контакты</h5>
+                <p><i class="bi bi-envelope"></i> info@ege-informatika.ru</p>
+                <p><i class="bi bi-telephone"></i> +7 (999) 123-45-67</p>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <div class="text-center">
+            <p class="mb-0">© 2026 ЕГЭ Информатика. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Обработка формы -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('formAlert').classList.remove('d-none');
+        this.reset();
+        setTimeout(() => {
+            document.getElementById('formAlert').classList.add('d-none');
+        }, 5000);
+    });
+</script>
+
+<!-- Активация бургер-меню -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        if (navbarToggler) {
+            navbarToggler.addEventListener('click', function () {
+                navbarCollapse.classList.toggle('show');
+            });
+        }
+
+        var navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                navbarCollapse.classList.remove('show');
+            });
+        });
+    });
+</script>
+</body>
+</html>

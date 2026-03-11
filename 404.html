@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | Страница не найдена</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .error-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #667eea;
+            line-height: 1;
+            text-shadow: 5px 5px 0 #e0e7ff;
+        }
+        .error-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .btn-primary {
+            background: #667eea;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+        .btn-primary:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .btn-outline-primary {
+            border: 2px solid #667eea;
+            color: #667eea;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+        }
+        .btn-outline-primary:hover {
+            background: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-container text-center">
+            <div class="error-code">404</div>
+            <div class="error-title">Страница не найдена</div>
+            <p class="text-muted mb-4">
+                Кажется, вы забрели не туда. Возможно, эта страница была удалена или ссылка устарела.
+            </p>
+            
+            <div class="mb-5">
+                <img src="https://cdn-icons-png.flaticon.com/512/7486/7486744.png" alt="404 illustration" style="width: 150px; opacity: 0.8;">
+            </div>
+            
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="bi bi-house-door"></i> На главную
+                </a>
+                <a href="contacts.html" class="btn btn-outline-primary">
+                    <i class="bi bi-envelope"></i> Связаться с нами
+                </a>
+            </div>
+            
+            <hr class="my-4">
+            
+            <p class="text-muted mb-3">Полезные ссылки:</p>
+            <nav class="nav justify-content-center">
+                <a class="nav-link text-dark" href="index.html#courses">Курсы</a>
+                <a class="nav-link text-dark" href="faq.html">FAQ</a>
+                <a class="nav-link text-dark" href="contacts.html">Контакты</a>
+            </nav>
+            
+            <div class="mt-4">
+                <a href="index.html" class="text-decoration-none">
+                    <i class="bi bi-arrow-left"></i> Вернуться на сайт
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
