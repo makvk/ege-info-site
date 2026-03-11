@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЕГЭ Информатика | Подготовка онлайн</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="bi bi-laptop"></i> ЕГЭ Информатика</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Курсы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero-секция -->
+<section class="hero" id="hero">
+    <div class="container text-center">
+        <h1 class="display-3 fw-bold">Сдай ЕГЭ по информатике на 90+</h1>
+        <p class="lead fs-3">Индивидуальные и групповые занятия с экспертами</p>
+        <a href="#courses" class="btn btn-light btn-lg mt-3">Выбрать курс</a>
+    </div>
+</section>
+
+<!-- О проекте -->
+<section class="py-5" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold">О проекте</h2>
+                <p class="fs-5">Мы готовим к ЕГЭ по информатике с 2015 года. За это время 500+ наших учеников поступили в топовые вузы России: ВШЭ, МГУ, ИТМО, МФТИ.</p>
+                <p class="fs-5">Авторская методика, актуальные задания, поддержка 24/7.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400?text=Учебный+процесс" class="img-fluid rounded" alt="О проекте">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section class="py-5 bg-light" id="advantages">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Почему выбирают нас</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4 card-hover">
+                    <i class="bi bi-person-workspace display-1 text-primary"></i>
+                    <h4>Опытные преподаватели</h4>
+                    <p>Только действующие эксперты ЕГЭ и члены предметных комиссий.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4 card-hover">
+                    <i class="bi bi-laptop display-1 text-primary"></i>
+                    <h4>Современная платформа</h4>
+                    <p>Занятия на удобной онлайн-платформе с автопроверкой кода.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center p-4 card-hover">
+                    <i class="bi bi-graph-up-arrow display-1 text-primary"></i>
+                    <h4>Персональный план</h4>
+                    <p>Для каждого ученика составляем индивидуальную траекторию.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Программа курса -->
+<section class="py-5" id="courses">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Наши курсы</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Базовый курс</h5>
+                        <p class="card-text">Для начинающих. Разбор всех типов заданий с нуля.</p>
+                        <p class="fw-bold">9 900 ₽ / месяц</p>
+                        <a href="#" class="btn btn-primary">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 card-hover border-warning">
+                    <div class="card-body">
+                        <h5 class="card-title">Интенсив</h5>
+                        <p class="card-text">Для продвинутых. Прорешивание сложных задач, разбор ловушек.</p>
+                        <p class="fw-bold">14 900 ₽ / месяц</p>
+                        <a href="#" class="btn btn-warning">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Индивидуально</h5>
+                        <p class="card-text">Персональные занятия с преподавателем 1 на 1.</p>
+                        <p class="fw-bold">2 500 ₽ / занятие</p>
+                        <a href="#" class="btn btn-primary">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Отзывы -->
+<section class="py-5 bg-light" id="reviews">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Отзывы учеников</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="card-text">"За 4 месяца подтянул информатику с 67 до 100 баллов. Спасибо большое!"</p>
+                        <p class="fw-bold mb-0">— Сабир М.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="card-text">"Очень структурированная подача, все понятно и без воды."</p>
+                        <p class="fw-bold mb-0">— Виталий Г.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <p class="card-text">"Поступила в МИРЭА на бюджет! Курс полностью оправдал ожидания."</p>
+                        <p class="fw-bold mb-0">— Анна М.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Футер -->
+<footer class="bg-dark text-white py-4" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Контакты</h5>
+                <p><i class="bi bi-envelope"></i> info@ege-informatika.ru</p>
+                <p><i class="bi bi-telephone"></i> +7 (999) 123-45-67</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Соцсети</h5>
+                <a href="#" class="text-white me-3"><i class="bi bi-telegram fs-4"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-vk fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <p>© 2026 ЕГЭ Информатика. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Активация навигационного меню -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var navbarCollapse = document.querySelector('.navbar-collapse');
+        
+        navbarToggler.addEventListener('click', function () {
+            navbarCollapse.classList.toggle('show');
+        });
+
+        // Закрытие меню при клике на ссылку
+        var navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                navbarCollapse.classList.remove('show');
+            });
+        });
+    });
+</script>
+</body>
+</html>
