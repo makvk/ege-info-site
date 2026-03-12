@@ -20,4 +20,4 @@ Bootstrap 5
 - Единая навигация на всех страницах
 
 ## Ссылка на опубликованный сайт
-https://ваш-логин.github.io/ege-info-site/
+https://makvk.github.io/ege-info-site/
